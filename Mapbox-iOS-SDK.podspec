@@ -12,8 +12,8 @@ Pod::Spec.new do |m|
     m.social_media_url = 'https://twitter.com/Mapbox'
     
     m.source = {
-        :git => 'https://github.com/mapbox/mapbox-ios-sdk-legacy.git',
-        :tag => m.version.to_s
+        :git => 'https://github.com/MallTo-Silence/mapbox-ios-sdk-legacy.git',
+        :branch => 'release'
     }
     
     m.platform              = :ios
@@ -102,7 +102,7 @@ Pod::Spec.new do |m|
     
     m.vendored_libraries = 'Proj4/libProj4.a'
     
-    m.dependency 'FMDB', '2.5'
+    m.dependency 'FMDB', '2.6.2'
     m.dependency 'GRMustache', '7.3.2'
     m.dependency 'SMCalloutView', '1.1'
     
