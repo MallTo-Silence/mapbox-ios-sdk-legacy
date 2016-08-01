@@ -145,7 +145,6 @@
 		DD94D46B16C2E064003D5739 /* HeadingAngleLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD94D46716C2E064003D5739 /* HeadingAngleLarge@2x.png */; };
 		DD94D46C16C2E064003D5739 /* HeadingAngleMedium.png in Resources */ = {isa = PBXBuildFile; fileRef = DD94D46816C2E064003D5739 /* HeadingAngleMedium.png */; };
 		DD94D46D16C2E064003D5739 /* HeadingAngleMedium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD94D46916C2E064003D5739 /* HeadingAngleMedium@2x.png */; };
-		DD97C11616489678007C4652 /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD97C11516489678007C4652 /* libProj4.a */; };
 		DD98B6FA14D76B930092882F /* RMMapboxSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DD98B6F814D76B930092882F /* RMMapboxSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD98B6FB14D76B930092882F /* RMMapboxSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD98B6F914D76B930092882F /* RMMapboxSource.m */; };
 		DDA257011798A95600BBB325 /* TrackingLocationOffMaskLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA256F61798A95600BBB325 /* TrackingLocationOffMaskLandscape@2x.png */; };
@@ -176,6 +175,7 @@
 		DDEDBBD01A81864800646DBB /* libGRMustache7-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEDBBCF1A81864800646DBB /* libGRMustache7-iOS.a */; };
 		E856D9571D4F24080059FBEC /* RMEmptySource.h in Headers */ = {isa = PBXBuildFile; fileRef = E856D9551D4F24080059FBEC /* RMEmptySource.h */; };
 		E856D9581D4F24080059FBEC /* RMEmptySource.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D9561D4F24080059FBEC /* RMEmptySource.m */; };
+		E856D95A1D4F26570059FBEC /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E856D9591D4F26570059FBEC /* libProj4.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,7 +331,6 @@
 		DD94D46716C2E064003D5739 /* HeadingAngleLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeadingAngleLarge@2x.png"; path = "Map/Resources/HeadingAngleLarge@2x.png"; sourceTree = "<group>"; };
 		DD94D46816C2E064003D5739 /* HeadingAngleMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HeadingAngleMedium.png; path = Map/Resources/HeadingAngleMedium.png; sourceTree = "<group>"; };
 		DD94D46916C2E064003D5739 /* HeadingAngleMedium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeadingAngleMedium@2x.png"; path = "Map/Resources/HeadingAngleMedium@2x.png"; sourceTree = "<group>"; };
-		DD97C11516489678007C4652 /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProj4.a; path = ../Proj4/libProj4.a; sourceTree = "<group>"; };
 		DD98B6F814D76B930092882F /* RMMapboxSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapboxSource.h; sourceTree = "<group>"; };
 		DD98B6F914D76B930092882F /* RMMapboxSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapboxSource.m; sourceTree = "<group>"; };
 		DDA256F61798A95600BBB325 /* TrackingLocationOffMaskLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TrackingLocationOffMaskLandscape@2x.png"; path = "Map/Resources/TrackingLocationOffMaskLandscape@2x.png"; sourceTree = "<group>"; };
@@ -362,6 +361,7 @@
 		DDEDBBCF1A81864800646DBB /* libGRMustache7-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache7-iOS.a"; path = "GRMustache/lib/libGRMustache7-iOS.a"; sourceTree = "<group>"; };
 		E856D9551D4F24080059FBEC /* RMEmptySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMEmptySource.h; sourceTree = "<group>"; };
 		E856D9561D4F24080059FBEC /* RMEmptySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMEmptySource.m; sourceTree = "<group>"; };
+		E856D9591D4F26570059FBEC /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libProj4.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,7 +376,7 @@
 				B8C974540E8A19B2007D16AD /* QuartzCore.framework in Frameworks */,
 				B8474BC10EB4019A006A0BC1 /* libsqlite3.dylib in Frameworks */,
 				DDEDBBD01A81864800646DBB /* libGRMustache7-iOS.a in Frameworks */,
-				DD97C11616489678007C4652 /* libProj4.a in Frameworks */,
+				E856D95A1D4F26570059FBEC /* libProj4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,7 +730,7 @@
 		DDDFF7FE165D5BA200A9D877 /* Proj4 */ = {
 			isa = PBXGroup;
 			children = (
-				DD97C11516489678007C4652 /* libProj4.a */,
+				E856D9591D4F26570059FBEC /* libProj4.a */,
 			);
 			name = Proj4;
 			sourceTree = "<group>";
@@ -1028,6 +1028,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Map/GRMustache/lib\"",
 					"\"$(SRCROOT)/../Proj4\"",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Mapbox;
@@ -1054,6 +1055,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Map/GRMustache/lib\"",
 					"\"$(SRCROOT)/../Proj4\"",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Mapbox;
