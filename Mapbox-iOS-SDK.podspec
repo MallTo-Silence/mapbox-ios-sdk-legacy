@@ -79,7 +79,7 @@ Pod::Spec.new do |m|
     'MapView/Map/RMTileImage.h',
     'MapView/Map/RMTileMillSource.h',
     'MapView/Map/RMTileSource.h',
-    'MapView/Map/RMEmptySource.h'
+    'MapView/Map/RMEmptySource.h',
     'MapView/Map/RMTileSourcesContainer.h',
     'MapView/Map/RMUserLocation.h',
     'MapView/Map/RMUserTrackingBarButtonItem.h'
