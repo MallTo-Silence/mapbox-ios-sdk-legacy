@@ -174,6 +174,8 @@
 		DDE357F916522CD8001DB842 /* RMPolygonAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE357F716522CD8001DB842 /* RMPolygonAnnotation.m */; };
 		DDE68E5A17D94C0500F1E869 /* mapbox-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE68E5917D94C0500F1E869 /* mapbox-logo.png */; };
 		DDEDBBD01A81864800646DBB /* libGRMustache7-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEDBBCF1A81864800646DBB /* libGRMustache7-iOS.a */; };
+		E856D9571D4F24080059FBEC /* RMEmptySource.h in Headers */ = {isa = PBXBuildFile; fileRef = E856D9551D4F24080059FBEC /* RMEmptySource.h */; };
+		E856D9581D4F24080059FBEC /* RMEmptySource.m in Sources */ = {isa = PBXBuildFile; fileRef = E856D9561D4F24080059FBEC /* RMEmptySource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,6 +360,8 @@
 		DDE357F716522CD8001DB842 /* RMPolygonAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPolygonAnnotation.m; sourceTree = "<group>"; };
 		DDE68E5917D94C0500F1E869 /* mapbox-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapbox-logo.png"; path = "Map/Resources/mapbox-logo.png"; sourceTree = "<group>"; };
 		DDEDBBCF1A81864800646DBB /* libGRMustache7-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache7-iOS.a"; path = "GRMustache/lib/libGRMustache7-iOS.a"; sourceTree = "<group>"; };
+		E856D9551D4F24080059FBEC /* RMEmptySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMEmptySource.h; sourceTree = "<group>"; };
+		E856D9561D4F24080059FBEC /* RMEmptySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMEmptySource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +423,8 @@
 				DD4195C8162356900049E6BA /* RMBingSource.m */,
 				DD1985BF165C5F6400DF667F /* RMTileMillSource.h */,
 				DD1985C0165C5F6400DF667F /* RMTileMillSource.m */,
+				E856D9551D4F24080059FBEC /* RMEmptySource.h */,
+				E856D9561D4F24080059FBEC /* RMEmptySource.m */,
 			);
 			name = "Map Sources";
 			sourceTree = "<group>";
@@ -763,6 +769,7 @@
 				DDA6B8BD155CAB67003DB5D8 /* RMUserTrackingBarButtonItem.h in Headers */,
 				16F98C961590CFF000FF90CE /* RMShape.h in Headers */,
 				DD4BE198161CE296003EF677 /* Mapbox.h in Headers */,
+				E856D9571D4F24080059FBEC /* RMEmptySource.h in Headers */,
 				16E5A63A15E531F200C92A5A /* RMCompositeSource.h in Headers */,
 				DD7C7E38164C894F0021CCA5 /* RMStaticMapView.h in Headers */,
 				DDE357E71651F570001DB842 /* RMPointAnnotation.h in Headers */,
@@ -975,6 +982,7 @@
 				DD7C7E39164C894F0021CCA5 /* RMStaticMapView.m in Sources */,
 				DDE357E81651F570001DB842 /* RMPointAnnotation.m in Sources */,
 				DDE357F1165223A3001DB842 /* RMShapeAnnotation.m in Sources */,
+				E856D9581D4F24080059FBEC /* RMEmptySource.m in Sources */,
 				DDE357F516522661001DB842 /* RMPolylineAnnotation.m in Sources */,
 				DDE357F916522CD8001DB842 /* RMPolygonAnnotation.m in Sources */,
 				DD1985C2165C5F6400DF667F /* RMTileMillSource.m in Sources */,

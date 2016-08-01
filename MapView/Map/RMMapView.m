@@ -43,6 +43,7 @@
 #import "RMTileCache.h"
 #import "RMTileSource.h"
 #import "RMMapboxSource.h"
+#import "RMEmptySource.h"
 
 #import "RMMapTiledLayerView.h"
 #import "RMMapOverlayView.h"
@@ -353,7 +354,7 @@ UIViewControllerAnimatedTransitioning>
 
 - (id)initWithFrame:(CGRect)frame
 {
-    return [self initWithFrame:frame andTilesource:[RMMapboxSource new]];
+    return [self initWithFrame:frame andTilesource:[RMEmptySource shareEmptySource]];
 }
 
 - (id)initWithFrame:(CGRect)frame andTilesource:(id <RMTileSource>)newTilesource

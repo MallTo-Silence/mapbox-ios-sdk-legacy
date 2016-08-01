@@ -1,7 +1,7 @@
 Pod::Spec.new do |m|
     
     m.name    = 'MapBox'
-    m.version = '1.6.1'
+    m.version = '1.6.2'
     
     m.summary          = 'An open source toolset for building mapping applications for iOS devices.'
     m.description      = 'An open source toolset for building mapping applications for iOS devices with great flexibility for visual styling, offline use, and customizability.'
@@ -79,6 +79,7 @@ Pod::Spec.new do |m|
     'MapView/Map/RMTileImage.h',
     'MapView/Map/RMTileMillSource.h',
     'MapView/Map/RMTileSource.h',
+    'MapView/Map/RMEmptySource.h'
     'MapView/Map/RMTileSourcesContainer.h',
     'MapView/Map/RMUserLocation.h',
     'MapView/Map/RMUserTrackingBarButtonItem.h'
