@@ -13,8 +13,13 @@
 
 static NSString *const kRMMapSourceKey = @"RMMapSource";
 
-@implementation RMEmptySource{
+static CGFloat const KRMMapSourceMinZoom = 1;
+static CGFloat const KRMMapSourceMaxZoom = 5;
+static CGFloat const kRMMapSourceSize = 256;
+static RMSphericalTrapezium const kRMMapSourceBoundingBox = {.southWest = {-90, -180.0}, .northEast = {90, 180.0}};
 
+@implementation RMEmptySource{
+    
     RMFractalTileProjection *_tileProjection;
 }
 
@@ -34,7 +39,13 @@ static NSString *const kRMMapSourceKey = @"RMMapSource";
 - (instancetype)init{
     self = [super init];
     if (self) {
-        _tileProjection = [[RMFractalTileProjection alloc] initFromProjection:[self projection] tileSideLength:0 maxZoom:0 minZoom:0];
+        _tileProjection = [[RMFractalTileProjection alloc] initFromProjection:[self projection]
+                                                               tileSideLength:kRMMapSourceSize
+                                                                      maxZoom:KRMMapSourceMaxZoom
+                                                                      minZoom:KRMMapSourceMinZoom];
+        
+        self.cacheable = NO;
+        self.opaque = YES;
     }
     return self;
 }
@@ -47,10 +58,12 @@ static NSString *const kRMMapSourceKey = @"RMMapSource";
 
 - (void)cancelAllDownloads{
     
+    // no-op
 }
 
 - (BOOL)tileSourceHasTile:(RMTile)tile{
-    return true;
+    
+    return YES;
 }
 
 - (NSString *)shortAttribution{
@@ -74,10 +87,11 @@ static NSString *const kRMMapSourceKey = @"RMMapSource";
 }
 
 - (id)imageForTile:(RMTile)tile inCache:(RMTileCache *)tileCache{
-    dispatch_async(dispatch_get_main_queue(), ^(void)
-                   {
-                       [[NSNotificationCenter defaultCenter] postNotificationName:RMTileRetrieved object:[NSNumber numberWithUnsignedLongLong:RMTileKey(tile)]];
-                   });
+    
+    //    NSBundle *resource = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"Mapbox" ofType:@"bundle"]];
+    //
+    //    return [UIImage imageWithContentsOfFile: [resource pathForResource:@"LoadingTile6" ofType:@"png"]];
+    
     return nil;
 }
 
@@ -107,17 +121,12 @@ static NSString *const kRMMapSourceKey = @"RMMapSource";
 }
 
 - (RMSphericalTrapezium)latitudeLongitudeBoundingBox{
-    RMSphericalTrapezium bounds = {
-        0.0,
-        0.0,
-        0.0,
-        0.0
-    };
-    return bounds;
+    
+    return kRMMapSourceBoundingBox;
 }
 
 - (void)didReceiveMemoryWarning{
-
+    
     NSLog(@"*** didReceiveMemoryWarning in %@", [self class]);
 }
 
